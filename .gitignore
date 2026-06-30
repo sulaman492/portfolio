@@ -1,0 +1,76 @@
+# --- DEPENDENCIES ---
+node_modules/
+.pnpm-store/
+.yarn/
+
+# --- BUILD OUTPUT ---
+dist/
+build/
+.next/
+out/
+.DS_Store
+
+# --- ENVIRONMENT FILES ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# --- CACHE & LOGS ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+.eslintcache
+.oxlintcache
+*.tsbuildinfo
+
+# --- IDE / EDITOR ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS FILES ---
+Thumbs.db
+Desktop.ini
+*.exe
+*.dll
+*.so
+*.dylib
+
+# --- TESTING ---
+coverage/
+.nyc_output/
+
+# --- MISC ---
+*.log
+.cache/
+.parcel-cache/
+.turbo/
+.vercel
+.netlify
+.terraform
+*.pem
+.ssh/
+
+# --- REACT SPECIFIC ---
+# If you're using CRA (Create React App)
+# /build is already above
+
+# --- TYPESCRIPT ---
+*.tsbuildinfo
+
+# --- PREVIEW / TEMP ---
+*.tmp
+temp/
+tmp/
