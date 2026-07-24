@@ -18,9 +18,18 @@ const LeftPanel = () => {
         </div>
 
         {/* Name - Centered */}
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-1 text-center">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight mb-2 text-center">
           Sulaman Shahzad
         </h1>
+
+        {/* Arrow between name and description - BIGGER */}
+        <div className="flex justify-center mb-2">
+          <img 
+            src="/arrow.png" 
+            alt="arrow" 
+            className="w-12 h-12 opacity-70"
+          />
+        </div>
 
         {/* Description - Centered with center text */}
         <p className="text-gray-600 text-sm md:text-base mb-4 text-center">
@@ -28,13 +37,13 @@ const LeftPanel = () => {
           exceptional digital experiences.
         </p>
 
-        {/* Social Icons - Centered with proper spacing */}
+        {/* Social Icons - Orange theme to match picture */}
         <div className="flex justify-center items-center gap-6">
           <a 
             href="https://github.com/yourusername" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-black transition-colors duration-200"
+            className="text-[#FF6B35] hover:text-[#E55A2B] transition-colors duration-200 hover:scale-110 transform"
           >
             <FaGithub className="w-6 h-6" />
           </a>
@@ -42,7 +51,7 @@ const LeftPanel = () => {
             href="https://linkedin.com/in/yourusername" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-black transition-colors duration-200"
+            className="text-[#FF6B35] hover:text-[#E55A2B] transition-colors duration-200 hover:scale-110 transform"
           >
             <FaLinkedin className="w-6 h-6" />
           </a>
@@ -50,7 +59,7 @@ const LeftPanel = () => {
             href="https://twitter.com/yourusername" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-black transition-colors duration-200"
+            className="text-[#FF6B35] hover:text-[#E55A2B] transition-colors duration-200 hover:scale-110 transform"
           >
             <FaTwitter className="w-6 h-6" />
           </a>
@@ -58,7 +67,7 @@ const LeftPanel = () => {
             href="https://instagram.com/yourusername" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-gray-500 hover:text-black transition-colors duration-200"
+            className="text-[#FF6B35] hover:text-[#E55A2B] transition-colors duration-200 hover:scale-110 transform"
           >
             <FaInstagram className="w-6 h-6" />
           </a>

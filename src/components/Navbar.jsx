@@ -23,7 +23,7 @@ const Navbar = () => {
               <img 
                 src={item.svg} 
                 alt={item.label} 
-                className="w-5 h-5 transition-transform duration-300 group-hover:scale-110"
+                className="w-5 h-5 transition-transform duration-300 group-hover:scale-110 brightness-0 invert"
               />
               
               {/* Hover Dropdown / Tooltip */}
