@@ -3,6 +3,7 @@ import React from 'react';
 import HeroSection from './sections/HeroSection';
 import StatsSection from './sections/StatsSection';
 import SkillsSection from './sections/SkillsSection';
+import CertificationsSection from './sections/CertificationsSection';
 import ProjectsSection from './sections/ProjectsSection';
 
 const RightContent = () => {
@@ -11,8 +12,10 @@ const RightContent = () => {
       <HeroSection />
       <StatsSection />
       <SkillsSection />
-      {/* Increased margin-top from mt-16 to mt-32 */}
-      <div className="mt-32 w-full">
+      {/* Certifications Section */}
+      <CertificationsSection />
+      {/* Projects Section */}
+      <div className="mt-14 w-full">
         <ProjectsSection />
       </div>
     </div>
