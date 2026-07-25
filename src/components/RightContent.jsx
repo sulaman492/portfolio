@@ -5,6 +5,7 @@ import StatsSection from './sections/StatsSection';
 import SkillsSection from './sections/SkillsSection';
 import CertificationsSection from './sections/CertificationsSection';
 import ProjectsSection from './sections/ProjectsSection';
+import WorkTogetherSection from './sections/WorkTogetherSection';
 
 const RightContent = () => {
   return (
@@ -17,6 +18,9 @@ const RightContent = () => {
       {/* Projects Section */}
       <div className="mt-14 w-full">
         <ProjectsSection />
+      </div>
+      <div className="mt-14 w-full">
+        <WorkTogetherSection />
       </div>
     </div>
   );
