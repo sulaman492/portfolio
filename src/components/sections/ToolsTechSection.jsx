@@ -2,55 +2,114 @@
 import React from 'react';
 
 const ToolsTechSection = () => {
-  const technologies = [
-    'React.js',
-    'JavaScript',
-    'TypeScript',
-    'Node.js',
-    'Tailwind CSS',
-    'Python',
-    'SQL',
-    'MongoDB',
-    'Next.js',
-    'Express.js',
-    'Git & GitHub',
-    'Figma',
+  const tools = [
+    {
+      name: 'React',
+      category: 'UI Library',
+      icon: '/react.svg',
+      url: 'https://react.dev/',
+    },
+    {
+      name: 'Next.js',
+      category: 'React framework',
+      icon: '/nextjs.svg',
+      url: 'https://nextjs.org/docs',
+    },
+    {
+      name: 'Node.js',
+      category: 'JavaScript Runtime',
+      icon: '/node.svg',
+      url: 'https://nodejs.org/en/docs',
+    },
+    {
+      name: 'Express.js',
+      category: 'Web Framework',
+      icon: '/express.svg',
+      url: 'https://expressjs.com/',
+    },
+    {
+      name: 'PostgreSQL',
+      category: 'Relational Database',
+      icon: '/postgresql.svg',
+      url: 'https://www.postgresql.org/docs/',
+    },
+    {
+      name: 'Tailwind CSS',
+      category: 'CSS Framework',
+      icon: '/tailwind.svg',
+      url: 'https://tailwindcss.com/docs',
+    },
+    {
+      name: 'Git',
+      category: 'Version Control',
+      icon: '/git.svg',
+      url: 'https://git-scm.com/doc',
+    },
+    {
+      name: 'Vercel',
+      category: 'Deployment Platform',
+      icon: '/vercel.svg',
+      url: 'https://vercel.com/docs',
+    },
   ];
 
   return (
     <div className="mt-16 w-full">
-      {/* Headline - Same styling as RECENT PROJECTS */}
+      {/* Headline - Matching Portfolio Typography */}
       <h1 
-        className="font-bold leading-none tracking-normal text-white"
+        className="font-bold leading-none tracking-normal text-white text-6xl sm:text-7xl md:text-[90px]"
         style={{
           color: '#FFFFFF',
           backgroundColor: 'rgba(0, 0, 0, 0)',
           fontFamily: 'Poppins, "Poppins Placeholder", sans-serif',
-          fontSize: '90px'
         }}
       >
         TOOLS & 
       </h1>
       <h1 
-        className="font-bold leading-none tracking-normal text-[rgba(182,180,189,0.2)]"
+        className="font-bold leading-none tracking-normal text-[rgba(182,180,189,0.2)] text-6xl sm:text-7xl md:text-[90px]"
         style={{
           fontFamily: 'Poppins, "Poppins Placeholder", sans-serif',
-          fontSize: '90px'
         }}
       >
         TECH
       </h1>
 
-      {/* Technologies Grid */}
-      <div className="flex flex-wrap gap-3 mt-8 w-full pr-4 md:pr-8">
-        {technologies.map((tech, index) => (
-          <span 
-            key={index}
-            className="bg-[#1C1A19] text-white px-5 py-2.5 rounded-full border border-gray-800 text-sm hover:border-orange-400/50 transition-all duration-300 hover:scale-105"
-            style={{ fontFamily: 'Poppins, sans-serif' }}
+      {/* Tools & Tech Grid - Interactive cards with documentation links */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 mt-10 w-full pr-4 md:pr-8">
+        {tools.map((tool, index) => (
+          <a 
+            key={index} 
+            href={tool.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-5 p-3.5 rounded-lg bg-[#151312] hover:bg-[#FFFFFF08] transition-colors duration-300 cursor-pointer no-underline group"
           >
-            {tech}
-          </span>
+            {/* Squircle White Icon Container */}
+            <div className="w-[72px] h-[72px] bg-white rounded-[22px] flex items-center justify-center flex-shrink-0 shadow-md p-3">
+              <img 
+                src={tool.icon} 
+                alt={tool.name} 
+                className="w-10 h-10 object-contain" 
+              />
+            </div>
+
+            {/* Tool Name & Category Description */}
+            <div className="flex flex-col justify-center">
+              <h3 
+                className="text-white text-2xl font-bold tracking-tight leading-tight group-hover:text-white"
+                style={{ fontFamily: 'Poppins, sans-serif' }}
+              >
+                {tool.name}
+              </h3>
+              <p 
+                className="text-[#8E8C95] text-base font-normal mt-0.5 tracking-tight group-hover:text-[#A8A5B2] transition-colors"
+                style={{ fontFamily: 'Poppins, sans-serif' }}
+              >
+                {tool.category}
+              </p>
+            </div>
+          </a>
         ))}
       </div>
     </div>
