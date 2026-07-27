@@ -3,12 +3,12 @@ import React from 'react';
 
 const SkillsSection = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center gap-4 mt-12 w-full pr-4 md:pr-8">
+    <div className="flex flex-col md:flex-row items-center gap-4 mt-12 w-full pr-4 md:pr-8">
       {/* Orange Square Card */}
       <div className="relative w-full sm:w-64 h-64 rounded-[24px] shadow-lg flex-shrink-0 overflow-hidden flex flex-col justify-between p-6 md:p-7 select-none">
         <img 
           src="/orange.png" 
-          alt="Dynamic Animation"
+          alt="Building Web Experiences"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         />
 
@@ -31,13 +31,23 @@ const SkillsSection = () => {
               fontSize: '24px'
             }}
           >
-            DYNAMIC<br />
-            ANIMATION,<br />
-            MOTION DESIGN
+            BUILDING WEB<br />
+            EXPERIENCES
           </h2>
           
-          <div className="w-10 h-10 rounded-[12px] border border-[#FFFFFF] flex items-center justify-center flex-shrink-0 ml-2">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+          {/* Orange Arrow Button - Hover only on arrow */}
+          <div className="w-10 h-10 rounded-[12px] border border-[#FFFFFF] flex items-center justify-center flex-shrink-0 ml-2 transition-all duration-300 hover:bg-white cursor-pointer group/arrow">
+            <svg 
+              width="18" 
+              height="18" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="#FFFFFF" 
+              strokeWidth="2.2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+              className="transition-all duration-300 group-hover/arrow:stroke-[#FF6B35]"
+            >
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />
             </svg>
@@ -49,7 +59,7 @@ const SkillsSection = () => {
       <div className="relative h-64 rounded-[24px] shadow-lg w-full overflow-hidden flex flex-col justify-between p-6 md:p-7 select-none">
         <img 
           src="/green.png" 
-          alt="Tech Stack"
+          alt="From Concept to Deployment"
           className="absolute inset-0 w-full h-full object-cover pointer-events-none"
         />
 
@@ -71,12 +81,24 @@ const SkillsSection = () => {
               fontSize: '24px'
             }}
           >
-            FRAMER, FIGMA, WORDPRESS,<br />
-            REACTJS
+            FROM CONCEPT<br />
+            TO DEPLOYMENT,<br />
+            END TO END
           </h2>
           
-          <div className="w-10 h-10 rounded-[12px] border border-[#151312] flex items-center justify-center flex-shrink-0 ml-2">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#151312" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+          {/* Green Arrow Button - Hover only on arrow */}
+          <div className="w-10 h-10 rounded-[12px] border border-[#151312] flex items-center justify-center flex-shrink-0 ml-2 transition-all duration-300 hover:bg-black cursor-pointer group/arrow">
+            <svg 
+              width="18" 
+              height="18" 
+              viewBox="0 0 24 24" 
+              fill="none" 
+              stroke="#151312" 
+              strokeWidth="2.2" 
+              strokeLinecap="round" 
+              strokeLinejoin="round"
+              className="transition-all duration-300 group-hover/arrow:stroke-[#B4F731]"
+            >
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />
             </svg>

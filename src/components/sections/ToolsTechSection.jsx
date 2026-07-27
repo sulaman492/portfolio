@@ -57,7 +57,7 @@ const ToolsTechSection = () => {
     <div className="mt-16 w-full">
       {/* Headline - Matching Portfolio Typography */}
       <h1 
-        className="font-bold leading-none tracking-normal text-white text-6xl sm:text-7xl md:text-[90px]"
+        className="font-bold leading-none tracking-normal text-white text-5xl sm:text-7xl md:text-[90px]"
         style={{
           color: '#FFFFFF',
           backgroundColor: 'rgba(0, 0, 0, 0)',
@@ -67,7 +67,7 @@ const ToolsTechSection = () => {
         TOOLS & 
       </h1>
       <h1 
-        className="font-bold leading-none tracking-normal text-[rgba(182,180,189,0.2)] text-6xl sm:text-7xl md:text-[90px]"
+        className="font-bold leading-none tracking-normal text-[rgba(182,180,189,0.2)] text-5xl sm:text-7xl md:text-[90px]"
         style={{
           fontFamily: 'Poppins, "Poppins Placeholder", sans-serif',
         }}
@@ -75,8 +75,8 @@ const ToolsTechSection = () => {
         TECH
       </h1>
 
-      {/* Tools & Tech Grid - Interactive cards with documentation links */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-4 mt-10 w-full pr-4 md:pr-8">
+      {/* Tools & Tech Grid - Aligned exactly with headline */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4 mt-10 w-full pr-4 md:pr-8">
         {tools.map((tool, index) => (
           <a 
             key={index} 

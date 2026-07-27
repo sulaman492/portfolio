@@ -10,6 +10,13 @@ const Navbar = () => {
     { id: 'thoughts', label: 'Thoughts', svg: '/thoughts.svg' },
   ];
 
+  const handleClick = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4">
       <div className="relative">
@@ -18,6 +25,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <button
               key={item.id}
+              onClick={() => handleClick(item.id)}
               className="flex flex-col items-center px-4 py-2 rounded-xl transition-all duration-300 relative group cursor-pointer bg-transparent hover:bg-transparent"
             >
               <img 

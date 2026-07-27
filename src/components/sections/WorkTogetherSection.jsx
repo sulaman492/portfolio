@@ -98,21 +98,19 @@ const WorkTogetherSection = () => {
     <div className="mt-16 w-full pr-4 md:pr-8 mb-16">
       {/* Headline */}
       <h1 
-        className="font-bold leading-none tracking-normal text-white"
+        className="font-bold leading-none tracking-normal text-white text-5xl sm:text-7xl md:text-[90px]"
         style={{
           color: '#FFFFFF',
           backgroundColor: 'rgba(0, 0, 0, 0)',
           fontFamily: 'Poppins, "Poppins Placeholder", sans-serif',
-          fontSize: '90px'
         }}
       >
         LET'S WORK
       </h1>
       <h1 
-        className="font-bold leading-none tracking-normal text-[rgba(182,180,189,0.2)]"
+        className="font-bold leading-none tracking-normal text-[rgba(182,180,189,0.2)] text-5xl sm:text-7xl md:text-[90px]"
         style={{
           fontFamily: 'Poppins, "Poppins Placeholder", sans-serif',
-          fontSize: '90px'
         }}
       >
         TOGETHER

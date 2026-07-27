@@ -39,34 +39,34 @@ const ProjectsSection = () => {
       </h1>
 
       {/* Project Cards */}
-      <div className="flex flex-col gap-5 mt-10 w-full pr-4 md:pr-8">
+      <div className="flex flex-col gap-4 sm:gap-5 mt-8 sm:mt-10 w-full pr-0 sm:pr-4 md:pr-8">
         {projects.map((project, index) => (
           <a
             key={index}
             href={project.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-6 p-5 rounded-2xl bg-[#151312] hover:bg-[#1E1C1A] border border-[#22201E] hover:border-[#353230] transition-colors duration-300 cursor-pointer no-underline"
+            className="group flex items-center gap-3.5 sm:gap-6 p-3.5 sm:p-5 rounded-xl bg-[#151312] hover:bg-[#FFFFFF08] transition-colors duration-300 cursor-pointer no-underline"
           >
-            {/* Project Thumbnail */}
-            <div className="w-[160px] h-[120px] rounded-xl overflow-hidden flex-shrink-0">
+            {/* Project Thumbnail - Compact on small screens */}
+            <div className="w-[110px] sm:w-[170px] md:w-[190px] h-[85px] sm:h-[130px] md:h-[145px] rounded-lg sm:rounded-xl overflow-hidden flex-shrink-0 bg-[#1E1C1A]">
               <img
                 src={project.image}
                 alt={project.name}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
 
-            {/* Project Info */}
-            <div className="flex flex-col justify-center flex-1 min-w-0">
+            {/* Project Info - Compact text on small screens */}
+            <div className="flex flex-col justify-center flex-1 min-w-0 py-0.5">
               <h3
-                className="text-white text-2xl font-bold tracking-tight leading-tight"
+                className="text-white text-lg sm:text-2xl md:text-3xl font-bold tracking-tight leading-tight"
                 style={{ fontFamily: 'Poppins, sans-serif' }}
               >
                 {project.name}
               </h3>
               <p
-                className="text-[#8E8C95] text-[15px] font-normal mt-1.5 leading-relaxed max-w-xl"
+                className="text-[#8E8C95] text-xs sm:text-[15px] font-normal mt-1 sm:mt-2 leading-snug sm:leading-relaxed max-w-xl line-clamp-2 sm:line-clamp-none"
                 style={{ fontFamily: 'Poppins, sans-serif' }}
               >
                 {project.description}
@@ -76,8 +76,8 @@ const ProjectsSection = () => {
             {/* Arrow */}
             <div className="text-[#F85B2B] flex-shrink-0 transition-transform duration-300 group-hover:translate-x-1.5 group-hover:-translate-y-1.5">
               <svg
-                width="22"
-                height="22"
+                width="20"
+                height="20"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
